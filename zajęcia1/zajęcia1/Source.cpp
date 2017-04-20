@@ -2,7 +2,7 @@
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
-#include <GL/glut.h>
+#include <GL/lut.h>
 #endif
 
 GLfloat x_1 = 100.0f;
@@ -86,7 +86,7 @@ void main(int argc, char* argv[]) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(800, 600);
-	glutCreateWindow("Wielok¹t");
+	glutCreateWindow("WielokÂ¹t");
 	glutDisplayFunc(RenderScene);
 	glutReshapeFunc(ChangeSize);
 	glutTimerFunc(33, TimerFunction, 1);
